@@ -1,4 +1,4 @@
 index:
     path: /
-    controller: Library\Controller\MController::hello
+    controller: Library\Controller\MController::index
     methods: [GET]

@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MController extends AbstractController
  {
-    public function hello(): Response 
+    public function index(): Response 
     {
         return $this->render('base.html.twig', []);
     }
