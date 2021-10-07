@@ -9,7 +9,14 @@ class MController extends AbstractController
  {
     public function index(): Response 
     {
-        return $this->render('base.html.twig', []);
+        $default = [
+            'title' => '',
+            'author' => '',
+            'synopsis' => '',
+            'image' => '',
+            'theme' => '',
+        ];
+        return $this->render('base.html.twig', $default);
     }
 }
 

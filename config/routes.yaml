@@ -5,5 +5,5 @@ index:
 
 add_book:
     path: /add_book
-    controller: Library\Controller\Book\AddBookController::index
+    controller: Library\Controller\AddBookController::index
     methods: [POST]
