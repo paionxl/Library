@@ -5,6 +5,11 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
+imports:
+    - { resource: services/Application/services.yml }
+    - { resource: services/Domain/services.yml }
+    - { resource: services/Infrastructure/services.yml }
+
 services:
     # default configuration for services in *this* file
     _defaults:
@@ -24,7 +29,12 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
+    #Controller containers
     Library\Controller\MController:
         calls:
             - method: setContainer
               arguments: ['@service_container']
+
+
+
+

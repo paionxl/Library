@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837cee6e-2fc2-421f-b080-ac9cc10fb508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/AddBook/AddBookService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Book/BookFormController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Book/GetBookController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookSynopsis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/services/Domain/services.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/AddBook/AddBookServiceRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/AddBook/AddBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookIdentity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookRepositoryCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistance/Book/BookRepositoryMySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/AddBook/AddBookService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/AddBook/AddBookService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Book/AddBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Book/AddBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/DeleteBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Book/DeleteBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/GetBooksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Book/GetBooksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/UpdateBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Book/UpdateBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookSynopsis.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookSynopsis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookTheme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookTheme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookTitle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Book/BookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Application/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1z9ZHIgs393zShLsLLjnSR6fv2g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,6 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,6 +70,8 @@
       <updated>1633562178822</updated>
       <workItem from="1633562182353" duration="75000" />
       <workItem from="1633562264381" duration="2468000" />
+      <workItem from="1633564817049" duration="33000" />
+      <workItem from="1633624782878" duration="5990000" />
     </task>
     <servers />
   </component>
