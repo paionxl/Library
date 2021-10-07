@@ -8,13 +8,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class AddBookController extends AbstractController
  {
-    public function index(Request $request): Response 
+    public function index(Request $request): Response
     {
-        $name = $request->get('name');
+        $title = $request->get('title');
         $author = $request->get('author');
         $image = $request->get('image');
         $theme = $request->get('theme');
-        
+        $theme = $request->get('synopsis');
+
+        $this->get();
+
         return $this->render('base.html.twig', []);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Library\Controller;
 
-class UpdateBookController
+class BookFormController
 {
 
 }

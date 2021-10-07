@@ -2,3 +2,8 @@ index:
     path: /
     controller: Library\Controller\MController::index
     methods: [GET]
+
+add_book:
+    path: /add_book
+    controller: Library\Controller\Book\AddBookController::index
+    methods: [GET]
