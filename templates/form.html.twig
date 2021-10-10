@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+{% if error is defined %}
+{{ error }}
+{% endif %}
 <form method="post" action="{{ url('add_book') }}">
 
     <div class="row-sm-12">
-        <label for="title">Title</label>
-        <input id="title" name="title" class="form-control input-sm" type="text"
-               placeholder="Enter title of the book" value="{{ title }}">
-        <label for="image">Image</label>
-        <input id="image" name="image" class="form-control input-sm" type="text"
-               placeholder="Enter image of the book" value="{{ image }}">
-        <label for="theme">Theme</label>
-        <input id="theme" name="theme" class="form-control input-sm" type="text"
-               placeholder="Enter theme of the book" value="{{ theme }}">
-        <label for="author">Author</label>
-        <input id="author" name="author" class="form-control input-sm" type="text"
-               placeholder="Enter author of the book" value="{{ author }}">
-        <label for="synopsis">Synopsis</label>
-        <input id="synopsis" name="synopsis" class="form-control input-sm" type="text"
-               placeholder="Enter synopsis of the book" value="{{ synopsis }}">
+       <label for="title">Title</label>
+       <input id="title" name="title" class="form-control input-sm" type="text"
+              placeholder="Enter title of the book" value="{{ title }}">
+    </div>
+    <div class="row-sm-12">
+       <label for="image">Image</label>
+       <input id="image" name="image" class="form-control input-sm" type="text"
+              placeholder="Enter image of the book" value="{{ image }}">
+    </div>
+    <div class="row-sm-12">
+       <label for="theme">Theme</label>
+       <input id="theme" name="theme" class="form-control input-sm" type="text"
+              placeholder="Enter theme of the book" value="{{ theme }}">
+    </div>
+    <div class="row-sm-12">
+       <label for="author">Author</label>
+       <input id="author" name="author" class="form-control input-sm" type="text"
+              placeholder="Enter author of the book" value="{{ author }}">
+    </div>
+    <div class="row-sm-12">
+       <label for="synopsis">Synopsis</label>
+       <input id="synopsis" name="synopsis" class="form-control input-sm" type="text"
+              placeholder="Enter synopsis of the book" value="{{ synopsis }}">
     </div>
     <div class="row-sm-4">
-        <button type="submit" class="btn btn-info btn-xs" id="add_book_action">Add a new book</button>
+       <button type="submit" class="btn btn-info btn-xs" id="add_book_action">Add a new book</button>
     </div>
+    <a href="{{ url('index') }}"
+       id="index" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+    >
+        <span class="" aria-hidden="true"></span>
+        Back
+    </a>
 </form>
+
 
 </body>
 </html>

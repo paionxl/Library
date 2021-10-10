@@ -7,3 +7,8 @@ add_book:
     path: /add_book
     controller: Library\Controller\AddBookController::index
     methods: [POST]
+
+add_form:
+    path: /form
+    controller: Library\Controller\FormController::index
+    methods: [GET]

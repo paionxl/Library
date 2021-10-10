@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% if error is defined %}
+{{ error }}
+{% endif %}
+<form method="post" action="{{ url('add_book') }}">
+
+    <div class="row-sm-12">
+        <label for="title_search">Search by title:</label>
+        <input id="title_search" name="title_search" class="form-control input-sm" type="text"
+            placeholder="Enter part of the title" value="{{ title_search }}">
+        <label for="author_search">Search by author:</label>
+        <input id="author_search" name="author_search" class="form-control input-sm" type="text"
+            placeholder="Enter part of the author" value="{{ author_search }}">
+    </div>
+    <div class="row-sm-4">
+       <button type="submit" class="btn btn-info btn-xs" id="get_books_action">Search</button>
+    </div>
+    <a href="{{ url('index') }}"
+       id="index" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+    >
+        <span class="" aria-hidden="true"></span>
+        Back
+    </a>
+</form>
+
+
+</body>
+</html>

@@ -40,6 +40,19 @@ services:
             - method: setContainer
               arguments: ['@service_container']
 
+    Library\Controller\FormController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+    
+
+    Doctrine\DBAL\Connection:
+        factory:      Doctrine\DBAL\DriverManager::getConnection
+        arguments:
+            $params:
+                driver:   pdo_mysql
+                url:      '%env(DATABASE_URL)%'
+                charset:  UTF8
 
 
 

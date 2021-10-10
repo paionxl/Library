@@ -7,17 +7,31 @@ use Library\Domain\Book\BookCollection;
 use Library\Domain\Book\BookIdentity;
 use Library\Domain\Book\BookRepository;
 use Library\Domain\Book\BookRepositoryCriteria;
+use Doctrine\DBAL\Driver\Connection;
+use Doctrine\DBAL\DriverManager;
 
 class BookRepositoryMySQL implements BookRepository
 {
+    private Connection $connection;
+
+    public function __construct() 
+    {
+        $connectionParams = array(
+            'url' => 'mysql://root:admin@db:3306/db'
+        );
+        $this->connection = DriverManager::getConnection($connectionParams);
+    }
+
     public function add(Book $book): void
     {
-        // TODO: Implement add() method.
+        $query = 'INSERT INTO db.books (id, title, author, theme, image, synopsis) VALUES (:id, :title, :author, :theme, :image, :synopsis)';
+        $this->connection->executeUpdate($query, $book->toArray());
     }
 
     public function find(BookIdentity $identity): Book
     {
-        // TODO: Implement find() method.
+        $query = 'SELECT * FROM db.books WHERE id=:id';
+        return Book::fromArray($this->connection->executeUpdate($query, [$identity->value()]));
     }
 
     public function findByCriteria(BookRepositoryCriteria $criteria): BookCollection
@@ -32,6 +46,7 @@ class BookRepositoryMySQL implements BookRepository
 
     public function update(Book $book): void
     {
-        // TODO: Implement update() method.
+        $query = 'UPDATE db.books SET  title = :title, author = :author, theme = :theme, image = :image, synopsis = :synposis';
+        $this->connection->executeUpdate($query, $book->toArray());
     }
 }

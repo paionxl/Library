@@ -1,5 +1,7 @@
 <?php
 
+namespace Library\Domain\AddBook;
+
 use Library\Domain\Book\Book;
 use Library\Domain\Book\BookRepository;
 

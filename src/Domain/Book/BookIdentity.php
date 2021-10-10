@@ -6,9 +6,13 @@ class BookIdentity
 {
     private string $value;
 
-    public function __construct()
+    public function __construct(string $value = null)
     {
-        $this->value = $this->guidv4();
+        if ($value) {
+            $this->value = $value;
+        } else {
+            $this->value = $this->guidv4();
+        }
     }
 
     private function guidv4(): string
