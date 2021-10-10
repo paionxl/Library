@@ -19,7 +19,7 @@ class AddBookController extends AbstractController
                 $request->get('theme'),
                 $request->get('synopsis'),
             );
-            $this->get()->execute($addBookRequest);
+            $this->get("library.application.add_book")->execute($addBookRequest);
             // flash correct
         } catch (\InvalidArgumentException $e) {
             // flash incorrect

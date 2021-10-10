@@ -1,2 +1,5 @@
 services:
-
+  library.application.add_book:
+    class: Library\Application\AddBook\AddBookService
+    arguments:
+      - "@library.domain.add_book"

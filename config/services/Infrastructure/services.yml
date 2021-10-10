@@ -1,1 +1,3 @@
 services:
+  library.infrastructure.persistance.book_repository_mysql:
+    class: Library\Infrastructure\Persistance\Book\BookRepositoryMySQL

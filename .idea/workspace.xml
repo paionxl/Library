@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837cee6e-2fc2-421f-b080-ac9cc10fb508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/services/Domain/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/AddBook/AddBookServiceRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/AddBook/AddBookService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookIdentity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Book/BookRepositoryCriteria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistance/Book/BookRepositoryMySQL.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FormController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/AddBook/AddBookService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/AddBook/AddBookService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/AddBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Book/AddBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookSynopsis.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookSynopsis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookTheme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookTheme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Book/BookTitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/BookTitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Book/BookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Application/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services/Application/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Application/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services/Domain/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Domain/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AddBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +60,10 @@
       <workItem from="1633562264381" duration="2468000" />
       <workItem from="1633564817049" duration="33000" />
       <workItem from="1633624782878" duration="5990000" />
+      <workItem from="1633642399200" duration="250000" />
+      <workItem from="1633696307974" duration="403000" />
+      <workItem from="1633701979120" duration="145000" />
+      <workItem from="1633881459547" duration="639000" />
     </task>
     <servers />
   </component>

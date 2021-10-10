@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="post" action="{{ url('add_book') }}">
+
+    <div class="row-sm-12">
+        <label for="title">Title</label>
+        <input id="title" name="title" class="form-control input-sm" type="text"
+               placeholder="Enter title of the book" value="{{ title }}">
+        <label for="image">Image</label>
+        <input id="image" name="image" class="form-control input-sm" type="text"
+               placeholder="Enter image of the book" value="{{ image }}">
+        <label for="theme">Theme</label>
+        <input id="theme" name="theme" class="form-control input-sm" type="text"
+               placeholder="Enter theme of the book" value="{{ theme }}">
+        <label for="author">Author</label>
+        <input id="author" name="author" class="form-control input-sm" type="text"
+               placeholder="Enter author of the book" value="{{ author }}">
+        <label for="synopsis">Synopsis</label>
+        <input id="synopsis" name="synopsis" class="form-control input-sm" type="text"
+               placeholder="Enter synopsis of the book" value="{{ synopsis }}">
+    </div>
+    <div class="row-sm-4">
+        <button type="submit" class="btn btn-info btn-xs" id="add_book_action">Add a new book</button>
+    </div>
+</form>
+
+</body>
+</html>

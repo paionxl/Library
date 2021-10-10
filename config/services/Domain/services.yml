@@ -1,1 +1,5 @@
 services:
+  library.domain.add_book:
+    class: Library\Domain\AddBook\AddBookService
+    arguments:
+      - "@library.infrastructure.persistance.book_repository_mysql"

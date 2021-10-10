@@ -7,16 +7,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MController extends AbstractController
  {
-    public function index(): Response 
+    public function index(): Response
     {
-        $default = [
-            'title' => '',
-            'author' => '',
-            'synopsis' => '',
-            'image' => '',
-            'theme' => '',
-        ];
-        return $this->render('base.html.twig', $default);
+        return $this->render('base.html.twig', []);
     }
 }
 
