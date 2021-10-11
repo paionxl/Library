@@ -24,7 +24,34 @@
         Back
     </a>
 </form>
-
+<tr>
+    <td>Title</td>
+    <td>Author</td>
+    <td>Theme</td>
+    <td>Synopsis</td>
+    <td>Image</td>
+</tr>
+{% for book in books %}
+<tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.theme }}</td>
+    <td>{{ book.synopsis }}</td>
+    <td>{{ book.image }}</td>
+    <a href="{{ url('index') }}"
+       id="update_{{ book.id }}" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+    >
+        <span class="" aria-hidden="true"></span>
+        Update
+    </a>
+    <a href="{{ url('index') }}"
+       id="delete_{{ book.id }}" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+    >
+        <span class="" aria-hidden="true"></span>
+        Delete
+    </a>
+</tr>
+{% endfor %}
 
 </body>
 </html>

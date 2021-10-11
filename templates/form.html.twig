@@ -4,7 +4,7 @@
 {% if error is defined %}
 {{ error }}
 {% endif %}
-<form method="post" action="{{ url('add_book') }}">
+<form method="post" action="{{ id == '' ? url('add_book') : url('update_book') }}">
 
     <div class="row-sm-12">
        <label for="title">Title</label>
@@ -32,8 +32,9 @@
               placeholder="Enter synopsis of the book" value="{{ synopsis }}">
     </div>
     <div class="row-sm-4">
-       <button type="submit" class="btn btn-info btn-xs" id="add_book_action">Add a new book</button>
+       <button type="submit" class="btn btn-info btn-xs" id="add_book_action">{{ id == '' ? 'Add new book' : 'Update book' }}</button>
     </div>
+    <input type="hidden" name="id" value="{{  id }}">
     <a href="{{ url('index') }}"
        id="index" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
     >

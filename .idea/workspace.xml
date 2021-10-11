@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837cee6e-2fc2-421f-b080-ac9cc10fb508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/FormController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/GetBook/GetBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/GetBook/GetBookService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services/Application/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Application/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services/Domain/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Domain/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Infrastructure/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AddBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Book/BookFormController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Book/DeleteBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DeleteBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Book/GetBookController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Book/GetBooksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GetBooksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Book/UpdateBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UpdateBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FormController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,11 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +72,7 @@
       <workItem from="1633696307974" duration="403000" />
       <workItem from="1633701979120" duration="145000" />
       <workItem from="1633881459547" duration="639000" />
+      <workItem from="1633945259479" duration="3412000" />
     </task>
     <servers />
   </component>

@@ -3,12 +3,13 @@
 namespace Library\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class MController extends AbstractController
- {
-    public function index(): Response
+class DeleteBookController extends AbstractController
+{
+    public function index(Request $request): Response
     {
-        return $this->render('base.html.twig', []);
+        
     }
 }
