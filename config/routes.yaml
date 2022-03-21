@@ -1,14 +1,24 @@
 index:
     path: /
-    controller: Library\Controller\MController::index
+    controller: Library\Controller\MainController::index
     methods: [GET]
 
 add_book:
-    path: /add_book
-    controller: Library\Controller\AddBookController::index
+    path: /add
+    controller: Library\Controller\AddBookController::add
     methods: [POST]
 
-add_form:
+update_book:
+    path: /{identity}/update
+    controller: Library\Controller\UpdateBookController::update
+    methods: [POST]
+
+delete_book:
+    path: /{identity}/delete
+    controller: Library\Controller\UpdateBookController::delete
+    methods: [POST]
+
+book_form:
     path: /form
     controller: Library\Controller\FormController::index
     methods: [GET]

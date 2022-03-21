@@ -30,7 +30,7 @@ services:
     # please note that last definitions always *replace* previous ones
 
     #Controller containers
-    Library\Controller\MController:
+    Library\Controller\MainController:
         calls:
             - method: setContainer
               arguments: ['@service_container']
@@ -44,7 +44,7 @@ services:
         calls:
             - method: setContainer
               arguments: ['@service_container']
-    
+
 
     Doctrine\DBAL\Connection:
         factory:      Doctrine\DBAL\DriverManager::getConnection

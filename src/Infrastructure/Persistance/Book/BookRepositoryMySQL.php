@@ -14,7 +14,7 @@ class BookRepositoryMySQL implements BookRepository
 {
     private Connection $connection;
 
-    public function __construct() 
+    public function __construct()
     {
         $connectionParams = array(
             'url' => 'mysql://root:admin@db:3306/db'
@@ -30,7 +30,7 @@ class BookRepositoryMySQL implements BookRepository
 
     public function find(BookIdentity $identity): Book
     {
-        $query = 'SELECT * FROM db.books WHERE id=:id';
+        $query = 'SELECT * FROM db.books WHERE id = :id';
         return Book::fromArray($this->connection->executeUpdate($query, [$identity->value()]));
     }
 
@@ -41,12 +41,14 @@ class BookRepositoryMySQL implements BookRepository
 
     public function delete(BookIdentity $identity): void
     {
-        // TODO: Implement delete() method.
+        $query = 'DELETE FROM db.books WHERE id = :id';
+        $this->connection->executeUpdate($query, [$identity->value()]);
     }
 
     public function update(Book $book): void
     {
-        $query = 'UPDATE db.books SET  title = :title, author = :author, theme = :theme, image = :image, synopsis = :synposis';
+        $query = 'UPDATE db.books SET
+            title = :title, author = :author, theme = :theme, image = :image, synopsis = :synposis';
         $this->connection->executeUpdate($query, $book->toArray());
     }
 }

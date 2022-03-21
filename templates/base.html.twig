@@ -2,13 +2,63 @@
 <html>
 
 <body>
+    {% if message is defined %}
+        {{ message }}
+    {% endif %}
     <h2>Library Database Management</h2>
-    <a href="{{ url('add_form') }}"
-       id="addBook" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
-    >
-        <span class="" aria-hidden="true"></span>
-        Add Book
-    </a>
+    <form method="get" action="{{ url('add_book') }}">
+        <div class="row-sm-4">
+            <button type="submit" class="btn btn-info btn-xs" id="add_book_action">Add Book</button>
+        </div>
+    </form>
+    <form method="post" action="{{ url('index') }}">
+
+        <div class="row-sm-12">
+            <label for="title_search">Search by title:</label>
+            <input id="title_search" name="title_search" class="form-control input-sm" type="text"
+                   placeholder="Enter part of the title" value="{{ title_search }}">
+            <label for="author_search">Search by author:</label>
+            <input id="author_search" name="author_search" class="form-control input-sm" type="text"
+                   placeholder="Enter part of the author" value="{{ author_search }}">
+        </div>
+        <div class="row-sm-4">
+            <button type="submit" class="btn btn-info btn-xs" id="get_books_action">Search</button>
+        </div>
+        <a href="{{ url('index') }}"
+           id="index" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+        >
+            <span class="" aria-hidden="true"></span>
+            Back
+        </a>
+    </form>
+    <tr>
+        <td>Title</td>
+        <td>Author</td>
+        <td>Theme</td>
+        <td>Synopsis</td>
+        <td>Image</td>
+    </tr>
+    {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.theme }}</td>
+            <td>{{ book.synopsis }}</td>
+            <td>{{ book.image }}</td>
+            <a href="{{ url('index') }}"
+               id="update_{{ book.id }}" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+            >
+                <span class="" aria-hidden="true"></span>
+                Update
+            </a>
+            <a href="{{ url('index') }}"
+               id="delete_{{ book.id }}" class="btn btn-primary btn-success btn-xs" style="margin-right: 5px;"
+            >
+                <span class="" aria-hidden="true"></span>
+                Delete
+            </a>
+        </tr>
+    {% endfor %}
 
 </body>
 

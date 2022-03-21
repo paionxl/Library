@@ -39,7 +39,7 @@ class Book
         ];
     }
 
-    public function fromArray(array $data): Book
+    public static function fromArray(array $data): Book
     {
         return new self(
             new BookIdentity($data['id']),

@@ -9,9 +9,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class AddBookController extends AbstractController
  {
-    public function index(Request $request): Response
+    public function add(Request $request): Response
     {
-        $error = '';
         try {
             $addBookRequest = new AddBookServiceRequest(
                 trim($request->get('title', '')),
@@ -22,18 +21,22 @@ class AddBookController extends AbstractController
             );
             $this->get("library.application.add_book")->execute($addBookRequest);
         } catch (\InvalidArgumentException $e) {
-            $error = $e->getMessage();
             $data = [
                 'title' => $request->get('title', ''),
                 'author' => $request->get('author', ''),
                 'image' => $request->get('image', ''),
                 'theme' => $request->get('theme', ''),
                 'synopsis' => $request->get('synopsis', ''),
-                'error' => $error
+                'message' => $e->getMessage()
             ];
             return $this->render('form.html.twig', $data);
         }
 
-        return $this->render('base.html.twig', []);
+        return $this->render(
+            'base.html.twig',
+            [
+                'message' => 'Book added correctly'
+            ]
+        );
     }
 }

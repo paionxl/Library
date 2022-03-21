@@ -3,3 +3,18 @@ services:
     class: Library\Domain\AddBook\AddBookService
     arguments:
       - "@library.infrastructure.persistance.book_repository_mysql"
+
+  library.domain.delete_book:
+    class: Library\Domain\DeleteBook\DeleteBookService
+    arguments:
+      - "@library.infrastructure.persistance.book_repository_mysql"
+
+  library.domain.get_book:
+    class: Library\Domain\GetBook\GetBookService
+    arguments:
+      - "@library.infrastructure.persistance.book_repository_mysql"
+
+  library.domain.update_book:
+    class: Library\Domain\UpdateBook\UpdateBookService
+    arguments:
+      - "@library.infrastructure.persistance.book_repository_mysql"

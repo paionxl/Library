@@ -2,18 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837cee6e-2fc2-421f-b080-ac9cc10fb508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/GetBook/GetBookService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/GetBook/GetBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/DeleteBook/DeleteBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/UpdateBook/UpdateBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/UpdateBook/UpdateBookServiceRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/DeleteBook/DeleteBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/UpdateBook/UpdateBookService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/AddBook/AddBookServiceRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/AddBook/AddBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/DeleteBook/DeleteBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/GetBook/GetBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/UpdateBook/UpdateBookServiceRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/UpdateBook/UpdateBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/AddBook/AddBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/AuthorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookCollectionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookIdentityTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookImageTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookRepositoryCriteriaTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookSynopsisTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookThemeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/Book/BookTitleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/DeleteBook/DeleteBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/GetBook/GetBookServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Domain/UpdateBook/UpdateBookServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/BookFormController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/DeleteBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DeleteBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/GetBookController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/GetBooksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GetBooksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Book/UpdateBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UpdateBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FormController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services/Application/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Application/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services/Domain/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services/Domain/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AddBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DeleteBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DeleteBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/GetBooksController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UpdateBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UpdateBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Book/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Book/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistance/Book/BookRepositoryMySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistance/Book/BookRepositoryMySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +63,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1z9ZHIgs393zShLsLLjnSR6fv2g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,8 +84,30 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Application" />
       <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.BookCollectionTest">
+    <configuration name="AuthorTest.testItReturnsNameCorrectly" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Library\Tests\Domain\Book\AuthorTest" file="$PROJECT_DIR$/tests/Domain/Book/AuthorTest.php" method="testItReturnsNameCorrectly" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BookCollectionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Library\Tests\Domain\Book\BookCollectionTest" file="$PROJECT_DIR$/tests/Domain/Book/BookCollectionTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.BookCollectionTest" />
+        <item itemvalue="PHPUnit.AuthorTest.testItReturnsNameCorrectly" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +126,15 @@
       <workItem from="1633701979120" duration="145000" />
       <workItem from="1633881459547" duration="639000" />
       <workItem from="1633945259479" duration="3412000" />
+      <workItem from="1644394721892" duration="1765000" />
+      <workItem from="1644396880960" duration="1512000" />
+      <workItem from="1644847251385" duration="1830000" />
+      <workItem from="1644874153437" duration="8056000" />
+      <workItem from="1645009615219" duration="821000" />
+      <workItem from="1645180739319" duration="5516000" />
+      <workItem from="1647877610741" duration="126000" />
+      <workItem from="1647877835009" duration="1010000" />
+      <workItem from="1647879529941" duration="2618000" />
     </task>
     <servers />
   </component>

@@ -4,3 +4,21 @@ services:
     public: true
     arguments:
       - "@library.domain.add_book"
+
+  library.application.delete_book:
+    class: Library\Application\DeleteBook\DeleteBookService
+    public: true
+    arguments:
+      - "@library.domain.delete_book"
+
+  library.application.get_book:
+    class: Library\Application\GetBook\GetBookService
+    public: true
+    arguments:
+      - "@library.domain.get_book"
+
+  library.application.update_book:
+    class: Library\Application\UpdateBook\UpdateBookService
+    public: true
+    arguments:
+      - "@library.domain.update_book"
